@@ -355,7 +355,7 @@ const relationCount = await prisma.user.findMany({
 
 When you use `select` or `include` to return a subset of the related data, you can **filter and sort the list of relations** inside the `select` or `include`.
 
-For example, the following query returns all users and a list of titles of the unpublished posts associated with each user:
+For example, the following query returns a list of titles of the unpublished posts associated with each user:
 
 ```ts
 const result = await prisma.user.findFirst({
@@ -375,7 +375,7 @@ const result = await prisma.user.findFirst({
 })
 ```
 
-You can also write the same query using `include` as follows:
+You can also write another query using `include` as follows:
 
 ```ts
 const result = await prisma.user.findFirst({
