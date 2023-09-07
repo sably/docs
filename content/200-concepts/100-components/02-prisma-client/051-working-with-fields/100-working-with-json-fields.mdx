@@ -586,7 +586,7 @@ const getUsers = await prisma.user.findMany({
   where: {
     comments: {
       path: ['owned', '1'],
-      string_contains: 'Bob',
+      array_contains: 'Bob',
     },
   },
 })
