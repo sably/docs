@@ -701,8 +701,26 @@ const result = await prisma.user.create({
   coinflips: [],
   posts: [
     {
+      id: 8,
+      title: 'An existing post...',
+      published: true,
+      authorId: 27,
+      comments: {},
+      views: 0,
+      likes: 0
+    },
+{
+      id: 9,
+      title: 'An existing post...',
+      published: true,
+      authorId: 27,
+      comments: {},
+      views: 0,
+      likes: 0
+    },
+{
       id: 10,
-      title: 'An existing post',
+      title: 'An existing post...',
       published: true,
       authorId: 27,
       comments: {},
